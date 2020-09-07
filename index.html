@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Etiquetas para insertar bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Viriccionario</title>
 </head>
 <body>
-    <header>
-        <h1>Viriccionario</h1>
-        <h2>Una enciclopedia sobre zapatos</h2>
-        <p>Es un compendio de información sobre calzado</p>
-    </header>
-    <article>
+
+    <div class="container">
+        <!-- Menu de navegacion -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tipo_calzado.html">Diseños</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <header>
-            <h2>¿Qué es un zapato?</h2>
+            <h1>Viriccionario</h1>
+            <h2>Una enciclopedia sobre zapatos</h2>
+            <p>Es un compendio de información sobre calzado</p>
         </header>
-        <p>Como definición un zapato es un artículo destinado a proteger
-            los pies. A nivel cultural se han utilizado como elemento 
-            decorativo y de moda. El
-            <a href="tipo_calzado.html">diseño</a>
-            de los zapatos fue variando a lo largo del tiempo y de una cultura
-            a otra, en sus comienzos la apariencia estuvo ligada a la función.
-            Tradicionalmente los zapatos se han fabricado con cuero y madera pero
-            a lo largo de los años se fue ampliando el uso de otros
-            <a href="https://www.calzadosclubverde.es/blog/hombre-mujer/materiales-mas-usados-en-la-fabricacion-de-zapatos-infografia">materiales.</a>
-        </p>
-        <img src="img/partes_calzado.png" alt="Partes de un zapato">
-    </article>
+        <article>
+            <header>
+                <h2>¿Qué es un zapato?</h2>
+            </header>
+            <p>Como definición un zapato es un artículo destinado a proteger
+                los pies. A nivel cultural se han utilizado como elemento 
+                decorativo y de moda. El
+                <a class="text-decoration-none" href="tipo_calzado.html">diseño</a>
+                de los zapatos fue variando a lo largo del tiempo y de una cultura
+                a otra, en sus comienzos la apariencia estuvo ligada a la función.
+                Tradicionalmente los zapatos se han fabricado con cuero y madera pero
+                a lo largo de los años se fue ampliando el uso de otros
+                <a class="text-decoration-none" href="https://www.calzadosclubverde.es/blog/hombre-mujer/materiales-mas-usados-en-la-fabricacion-de-zapatos-infografia">materiales.</a>
+            </p>
+            <img class="img-fluid" src="img/partes_calzado.png" alt="Partes de un zapato">
+        </article>
+    </div>
+
 </body>
 </html>

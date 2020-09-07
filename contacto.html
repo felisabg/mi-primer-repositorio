@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container-fluid px-0">
         <!-- Menu de navegacion -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -39,33 +39,34 @@
                 </ul>
             </div>
         </nav>
-
-       <header>
-            <h1>Contactanos!</h1>
-       </header>
-    
-       <form action="#" class="was-validated">
-            <div class="form-group">
-                <label for="nombre">Nombre y apellido:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="ingresa tu nombre y apellido" name="nombre" required>
-                <div class="valid-feedback">Válido</div>
-                <div class="invalid-feedback">*Dato obligatorio</div>
+        <div class="container">
+            <header>
+                <h1>Contactanos!</h1>
+            </header>
+            
+            <form action="#" class="was-validated">
+                <div class="form-group">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="ingresa tu nombre y apellido" name="nombre" required>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">*Dato obligatorio</div>
+                </div>
+                <div class="form-group">
+                    <label for="mail">Email:</label>
+                    <input type="email" class="form-control" id="mail" placeholder="ingresa tu email" name="mail" required>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">*Dato obligatorio. Ingresa una dirección de email válida.</div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" placeholder="ingresa tu mensaje" name="mensaje" required rows="3"></textarea>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">*Dato obligatorio.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
             </div>
-            <div class="form-group">
-                <label for="mail">Email:</label>
-                <input type="email" class="form-control" id="mail" placeholder="ingresa tu email" name="mail" required>
-                <div class="valid-feedback">Válido</div>
-                <div class="invalid-feedback">*Dato obligatorio. Ingresa una dirección de email válida.</div>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" placeholder="ingresa tu mensaje" name="mensaje" required rows="3"></textarea>
-                <div class="valid-feedback">Válido</div>
-                <div class="invalid-feedback">*Dato obligatorio.</div>
-            </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
+        </div>
 
 </body>
 </html>

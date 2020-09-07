@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container-fluid px-0">
        
         <!-- Menu de navegacion -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -42,41 +42,43 @@
             </div>
         </nav>
 
-        <header>
-            <h1>Tipos de calzado</h1>
-            <h2>Todos los diseños en un solo lugar</h2>
-        </header>
-        <article>
-            <p>Si tenés dudas o no sabés diferenciar algunos tipos,
-            te dejo una tabla que te va a ayudar</p>
-            <table>
-                <style>
-                    table, th, td {
-                    border: 2px solid rgb(43, 43, 43);
-                    }
-                    </style>
-                <tr>
-                    <td>
-                        <h3>Ballerina</h3>
-                        <img class="img-fluid" src="img/ballerina.png" alt="">
-                    </td>
-                    <td>
-                    <h3>Stiletto</h3>
-                    <img class="img-fluid" src="img/stiletto.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Peep toe</h3>
-                        <img class="img-fluid" src="img/peep_toe.png" alt="">
-                    </td>
-                    <td>
-                        <h3>Pump</h3>
-                        <img class="img-fluid" src="img/pump.png" alt="">
-                    </td>
-                </tr>
-            </table>
-        </article>
+        <div class="container">
+            <header>
+                <h1>Tipos de calzado</h1>
+                <h2>Todos los diseños en un solo lugar</h2>
+            </header>
+            <article>
+                <p>Si tenés dudas o no sabés diferenciar algunos tipos,
+                te dejo una tabla que te va a ayudar</p>
+                <table>
+                    <style>
+                        table, th, td {
+                        border: 2px solid rgb(43, 43, 43);
+                        }
+                        </style>
+                    <tr>
+                        <td align="center">
+                            <img class="img-fluid" src="img/ballerina.png" alt="">
+                            <h5>Ballerina</h5>
+                        </td>
+                        <td align="center">
+                            <img class="img-fluid" src="img/stiletto.png" alt="">
+                            <h5>Stiletto</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <img class="img-fluid" src="img/peep_toe.png" alt="">
+                            <h5>Peep toe</h5>
+                        </td>
+                        <td align="center">
+                            <img class="img-fluid" src="img/pump.png" alt="">
+                            <h5>Pump</h5>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
     </div>
 </body>
 </html>

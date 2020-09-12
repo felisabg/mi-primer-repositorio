@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quiz</title>
 </head>
 <body>
@@ -44,22 +44,51 @@
         </nav>
 
         <div class="container">
-            <header>
-                <h1>Quiz</h1>
-                <p>Adiviná el nombre del zapato.</p>
-            </header>
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="ingresa tu nombre para comenzar el quiz" name="nombre" required>
-                <div class="valid-feedback">Válido</div>
-                <div class="invalid-feedback">*Dato obligatorio</div>
-            </div>
-            <button onclick="jugarQuiz()" class="btn btn-primary">Jugar</button>
-            
-            <div>
-            <img class="img-fluid" src="img/pregunta.png" id="imgquiz">
-            </div>
-        </div>
-    </div>
+			<div class="row">
+				<div class="col">
+				    <header>
+				        <h1>Quiz</h1>
+				        <p>Adiviná el nombre del zapato.</p>
+				    </header>
+				    <div class="form-group">
+				        <label for="nombre">Nombre:</label>
+				        <input type="text" class="form-control" id="nombre" placeholder="ingresa tu nombre para comenzar el quiz" name="nombre" required>
+				        <div class="valid-feedback">Válido</div>
+				        <div class="invalid-feedback">*Dato obligatorio</div>
+				    </div>
+				    <button id="boton_jugar" onclick="jugarQuiz()" class="btn btn-primary">Jugar</button>
+
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col-5">
+					<div id="quiz_options">
+						<div id="opt_ballerina_div" class="form-check-inline invisible">
+							<label class="form-check-label">
+								<input type="radio" onchange="validarRespuesta()" class="form-check-input" id="opt_ballerina" name="respuesta">Ballerina
+							</label>
+				    	</div>
+						<div id="opt_stiletto_div" class="form-check-inline invisible">
+							<label class="form-check-label">
+								<input type="radio" onchange="validarRespuesta()" class="form-check-input" id="opt_stiletto" name="respuesta">Stiletto
+							</label>
+				    	</div>
+						<div id="opt_peeptoe_div" class="form-check-inline invisible">
+							<label class="form-check-label">
+								<input type="radio" onchange="validarRespuesta()" class="form-check-input" id="opt_peeptoe" name="respuesta">Peep toe
+							</label>
+				    	</div>
+						<div id="opt_pump_div" class="form-check-inline invisible">
+							<label class="form-check-label">
+								<input type="radio" onchange="validarRespuesta()" class="form-check-input" id="opt_pump" name="respuesta">Pump
+							</label>
+				    	</div>
+					</div>
+		        	<div id="quiz_img"></div>
+		    	</div>
+				<div id="quiz_alerts" class="col-5"></div>
+    		</div>
+		</div>
+	</div>
 </body>
 </html>

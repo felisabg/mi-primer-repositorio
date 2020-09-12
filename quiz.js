@@ -56,25 +56,37 @@ function validarRespuesta() {
 
 	if(document.getElementById('opt_ballerina').checked == true) {
 		if(num_alea == 0) {
-			acierto = true;
+            acierto = true;
+            document.getElementById('opt_stiletto_div').classList.add("invisible");
+            document.getElementById('opt_peeptoe_div').classList.add("invisible");
+            document.getElementById('opt_pump_div').classList.add("invisible");
 		} else {
 			document.getElementById('opt_ballerina_div').classList.add("invisible");
 		}
 	} else if(document.getElementById('opt_stiletto').checked == true) {
 		if(num_alea == 1) {
-			acierto = true;
+            acierto = true;
+            document.getElementById('opt_peeptoe_div').classList.add("invisible");
+            document.getElementById('opt_pump_div').classList.add("invisible");
+            document.getElementById('opt_ballerina_div').classList.add("invisible");
 		} else {
 			document.getElementById('opt_stiletto_div').classList.add("invisible");
 		}
 	} else if(document.getElementById('opt_peeptoe').checked == true) {
 		if(num_alea == 2) {
-			acierto = true;
+            acierto = true;
+            document.getElementById('opt_stiletto_div').classList.add("invisible");
+            document.getElementById('opt_ballerina_div').classList.add("invisible");
+            document.getElementById('opt_pump_div').classList.add("invisible");
 		} else {
 			document.getElementById('opt_peeptoe_div').classList.add("invisible");
 		}
 	} else if(document.getElementById('opt_pump').checked == true) {
 		if(num_alea == 3) {
-			acierto = true;
+            acierto = true;
+            document.getElementById('opt_stiletto_div').classList.add("invisible");
+            document.getElementById('opt_ballerina_div').classList.add("invisible");
+            document.getElementById('opt_peeptoe_div').classList.add("invisible");
 		} else {
 			document.getElementById('opt_pump_div').classList.add("invisible");
 		}
@@ -86,7 +98,7 @@ function validarRespuesta() {
 							<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"> \
 								<span aria-hidden=\"true\">&times;</span> \
 							</button> \
-						</div>";
+                        </div>";
 		
 		nuevo_juego = true;
 
